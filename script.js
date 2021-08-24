@@ -23,7 +23,7 @@ function limparInput(){
 
 function criarClassImagem(seletorImagem){
     for(let i = 0; i < seletorImagem.length; i++){
-        seletorImagem[i].setAttribute('class', 'imagem');
+        seletorImagem[i].setAttribute('class','imagem');
     }
 }
 
@@ -93,8 +93,7 @@ function salvarTarefas(){
     const listaDeTarefas = [];
 
     for(let i of liTarefas){
-        let tarefaTexto = i.innerText;
-        tarefaTexto = tarefaTexto.replace('Apagar', '').trim();
+        let tarefaTexto = i.innerText;    
         listaDeTarefas.push(tarefaTexto);
     }
 
